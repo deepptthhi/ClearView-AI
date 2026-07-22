@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-ink: #10151c;
+  --color-ink-raised: #171e27;
+  --color-ink-line: #262f3b;
+
+  --color-paper: #edeae0;
+  --color-muted: #8a93a0;
+
+  --color-critical: #e1544c;
+  --color-serious: #e07a3f;
+  --color-moderate: #e0bd3d;
+  --color-minor: #6e93b8;
+  --color-good: #4fae7c;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+}
+
+/* Respect reduced-motion preferences for the scan-beam animation below */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes scan-sweep {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(2200%);
+  }
+}
+
+.animate-scan-sweep {
+  animation: scan-sweep 1.8s ease-in-out infinite;
+}
