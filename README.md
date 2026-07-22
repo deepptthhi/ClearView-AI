@@ -81,6 +81,6 @@ You can run this as one combined service (the backend serves the built frontend,
 
 ## About me
 
-Deepthi Manjunath 
-deepthimanjunath14@gmail.com 
-https://www.linkedin.com/in/deepthimanjunath14
+- Deepthi Manjunath 
+- deepthimanjunath14@gmail.com 
+- https://www.linkedin.com/in/deepthimanjunath14
