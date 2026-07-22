@@ -2,9 +2,6 @@
 
 Paste in some HTML, upload a Word doc / PDF / ODT file, or just give it a live URL. Clearview scans it for real accessibility issues, scores it, and tells you exactly what's wrong and where.
 
-🔗 **Live demo:** [add your deployed URL here after deploying]
-📂 **Source:** you're looking at it
-
 > Heads up: the "Scan URL" feature (and "Explain the fix," since that now runs through the backend too) uses a free tier server that falls asleep after 15 minutes of no traffic, so the first request after a while can take ~30 seconds to wake back up. Scanning pasted HTML or an uploaded file is instant either way.
 
 
