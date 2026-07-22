@@ -50,6 +50,10 @@ app.post("/api/explain", explainHandler);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const FRONTEND_DIST = path.resolve(__dirname, "../../frontend/dist");
 
+console.log("Current __dirname:", __dirname);
+console.log("Resolved frontend:", FRONTEND_DIST);
+console.log("Frontend exists:", fs.existsSync(FRONTEND_DIST));
+
 if (fs.existsSync(FRONTEND_DIST)) {
   app.use(express.static(FRONTEND_DIST));
 
